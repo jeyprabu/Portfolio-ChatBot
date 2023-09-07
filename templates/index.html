@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header id="home">
+        <div class="header-content">
+            <h1>Your Name</h1>
+            <p>Front-end Developer</p>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget elit vitae felis feugiat.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="section-content">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Web Developer</h3>
+                <p>Company ABC</p>
+                <p>January 2020 - Present</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="experience-item">
+                <h3>UI Designer</h3>
+                <p>Company XYZ</p>
+                <p>July 2018 - December 2019</p>
+                <p>Nullam eget elit vitae felis feugiat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-content">
+            <h2>Contact</h2>
+            <p>Email: yourname@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourname">linkedin.com/in/yourname</a></p>
+        </div>
+    </section>
+
+    <div id="chat-icon" class="floating-icon">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    <div id="message-box" class="floating-message">
+        <p>Hi chatbot here</p>
+    </div>
+    <div id="chat-dialog" class="hidden">
+        <div id="chat-header">
+            <span>Chatbot</span>
+            <i id="close-icon" class="fas fa-times"></i>
+        </div>
+        <div id="chat-messages"></div>
+        <input type="text" id="user-input" placeholder="Type your question...">
+        <button id="send-button">Send</button>
+    </div>
+    <script src="static/chatbot.js"></script>
+</body>
+</html>
+
+
+
