@@ -106,5 +106,3 @@ document.addEventListener("DOMContentLoaded", function () {
     chatIcon.addEventListener("click", hideMessageBox);
 
 });
-
-
