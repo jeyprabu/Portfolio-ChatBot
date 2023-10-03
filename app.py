@@ -4,7 +4,6 @@ import mysql.connector
 
 app = Flask(__name__)
 
-# Configure MySQL connection
 db = mysql.connector.connect(
     host="localhost",
     user="root",
@@ -25,13 +24,12 @@ def get_answer():
         query = "SELECT answer FROM chatbot WHERE question LIKE %s"
         cursor.execute(query, ('%' + question + '%',))
         result = cursor.fetchone()
-
-        if result:
-            return jsonify({"answer": result[0]})
+        if result!=None:
+            return jsonify({"answer": "🤖 : " +result[0]})
         else:
-            return jsonify({"answer": "I don't know what you are talking about."})
+            return jsonify({"answer": "🤖 : I don't know what you are talking about."})
     except Exception as e:
-        return jsonify({"answer": "I encountered an error while fetching the answer."})
+        return jsonify({"answer": "🤖 : I encountered an error while fetching the answer."})
     finally:
         if cursor:
             cursor.close()
