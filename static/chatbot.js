@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     sendMessage("Hello! How can I assist you?");
 });
-
 document.addEventListener("DOMContentLoaded", function () {
     const chatbot = document.getElementById("chatbot");
     const chatIcon = document.getElementById("chat-icon");
@@ -60,18 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const chatIcon = document.getElementById("chat-icon");
     const closeIcon = document.getElementById("close-icon");
     const chatDialog = document.getElementById("chat-dialog");
-    chatIcon.addEventListener("click", () => {
-        chatDialog.style.display = "block";
-    });
-    closeIcon.addEventListener("click", () => {
-        chatDialog.style.display = "none";
-    });
-
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const chatIcon = document.getElementById("chat-icon");
-    const closeIcon = document.getElementById("close-icon");
-    const chatDialog = document.getElementById("chat-dialog");
     const chatMessages = document.getElementById("chat-messages");
     const userInput = document.getElementById("user-input");
     const sendButton = document.getElementById("send-button");
@@ -93,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
         chatMessages.scrollTop = chatMessages.scrollHeight; 
     }
 });
-
 document.addEventListener("DOMContentLoaded", function () {
     const chatIcon = document.getElementById("chat-icon");
     const closeIcon = document.getElementById("close-icon");
@@ -104,5 +90,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     messageBox.style.display = "block";
     chatIcon.addEventListener("click", hideMessageBox);
-
 });
