@@ -3,84 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Jey Prabu</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='jp.png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>WELCOME TO MY PORTFOLIO WEBPAGE</h1>
     </header>
-    <header id="home">
-        <div class="header-content">
-            <h1>Your Name</h1>
-            <p>Front-end Developer</p>
-            <a href="#about" class="btn">About Me</a>
-        </div>
-    </header>
-
-    <section id="about" class="section">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget elit vitae felis feugiat.</p>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="section-content">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Web Developer</h3>
-                <p>Company ABC</p>
-                <p>January 2020 - Present</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="experience-item">
-                <h3>UI Designer</h3>
-                <p>Company XYZ</p>
-                <p>July 2018 - December 2019</p>
-                <p>Nullam eget elit vitae felis feugiat.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <div class="section-content">
-            <h2>Skills</h2>
+    <div class="container">
+        <section class="left">
+            <h1 style="color: red; text-align: center;"><b>Jey Prabu</b></h1>
+            <img src="{{ url_for('static', filename='jey.jpg') }}">
+            <h2 style="color: white;">About Me</h2>
+            <p><b>Hello, I'm Jey Prabu, a passoinate individual with a deep interest in the exciting word of Artificial Intelligence and Machine Learning. My journey is defined by my curiosity and determination to understand and harness the power of AI to solve complex problems. I aim to create innovative solutions that bridge the gap between cutting-edge technology and seamless user experience.</b></p>
+        </section>
+        <section class="right">
+            <h2 style="color: white;">Experience</h2>
             <ul>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>UI/UX Design</li>
+                    <li>Virtual Internship in Data Science</li>
+                    <li>3D Printing</li>
             </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="section-content">
-            <h2>Contact</h2>
-            <p>Email: yourname@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourname">linkedin.com/in/yourname</a></p>
-        </div>
-    </section>
-
+            <h2 style="color: white;">Skills</h2>
+            <ul>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                </ul>
+            </ul>
+            <h2 style="color: white;">Contact</h2>
+                <table>
+                    <tr>
+                        <td><b>Email </b></td>
+                        <td> : </td>
+                        <td>jeyprabu@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><b>Phone</b></td>
+                        <td> : </td>
+                        <td>80122XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td><b>LinkedIn</b></td>
+                        <td> : </td>
+                        <td><a href="https://www.linkedin.com/in/jeyprabu/">Jey Prabu</a></td>
+                    </tr>
+                    <tr>
+                        <td><b>GitHub</b></td>
+                        <td> : </td>
+                        <td><a href="https://github.com/jeyprabu">Jey Prabu</a></td>
+                    </tr>
+                </table>
+        </section>
+    </div>
     <div id="chat-icon" class="floating-icon">
         <i class="fas fa-comment-dots"></i>
     </div>
     <div id="message-box" class="floating-message">
-        <p>Hi chatbot here</p>
+        <i class="fas fa-robot"></i><p>Hi chatbot here!!</p>
     </div>
     <div id="chat-dialog" class="hidden">
         <div id="chat-header">
-            <span>Chatbot</span>
+            <span><b>Chatbot</b></span>
             <i id="close-icon" class="fas fa-times"></i>
         </div>
         <div id="chat-messages"></div>
@@ -88,8 +75,8 @@
         <button id="send-button">Send</button>
     </div>
     <script src="static/chatbot.js"></script>
+    <footer>
+        <p style="color: white;"><b>&copy; Jey Prabu</b></p>
+    </footer>
 </body>
 </html>
-
-
-
